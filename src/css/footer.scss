@@ -1,0 +1,18 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.footer *{
+    margin: 3%;
+}
+.footer::before{
+    border: 1px solid #D9FFF5;
+}
+
+@media (min-width: 768px) {
+    .footer{
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,128 @@
+
+.price__service{
+    padding-left: 3%;
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+.price__table{
+    border-collapse:collapse;
+    background: #F8F8F8;
+    align-self: stretch;
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+table.price__table thead tr{
+    text-align: left;
+    color:  #7E7E82;
+}
+table.price__table tbody tr:first-child td:first-child {
+    border-top-left-radius: 10px;
+}
+
+table.price__table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+table.price__table tbody tr:first-child td:last-child {
+    border-top-right-radius: 10px;
+}
+
+table.price__table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+.table__item{
+    background: #ffffff;
+    
+    //border-bottom: 2px solid #F8F8F8;
+}
+.table__item td{
+    //position: relative;
+    //bottom: 2px;
+    border-bottom: 2px #F8F8F8 solid;
+
+}
+.table__button{
+    background: #FF3E79;
+    color: #ffffff;
+    font-family: 'TT Lakes';
+    border-radius: 16px;
+    padding: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.table__button::after{
+    content: '';
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+    margin-bottom: 2px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-left: 4px;
+    padding: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    transform: rotate(-45deg);
+}
+.price__slide h3{
+    margin: 3px;
+}
+.price__slide{
+    flex-direction: column;
+    width: 240px;
+    height: 160px;
+    padding: 16px;
+    background: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+}
+.table__button--slide{
+    width: 100px;
+    position: relative;
+    bottom: 30px;
+    left: 140px;
+}
+.price--swiper{
+    height: 260px;
+}
+.price__table{
+    display: none;
+}
+.price p{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.price__button{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.price__button span{
+    margin: none;
+}
+.price__button::after{
+    content: '';
+    border: solid #FF3E79;
+    border-width: 0 3px 3px 0;
+    margin-bottom: 2px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-left: 4px;
+    padding: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    transform: rotate(-45deg);
+}
+@media (min-width: 768px) {
+
+    .price--swiper{
+        display: none;
+    }
+    .price__table{
+        display: table;
+    }
+}
