@@ -10,10 +10,12 @@
 
 <body>
     <div class="wrapper">
+
+
         <div class="inner-menu--close container__inner-menu">
             <div class="inner-menu__header header">
                 <div class="header__left">
-                    <button class="header__burger inner-menu__burger--close header-button button-g">
+                    <button class="header__burger inner-menu__burger--close inner-button header-button button-g">
                         <img src="resource/header/close-burger.svg" alt="">
                     </button>
                     <a href="" class="logo">
@@ -26,7 +28,6 @@
                     </button>
                 </div>
             </div>
-
             <nav class="inner-menu__nav nav">
                 <button class="inner-menu__nav-elem nav-elem button-g">
                     Ремонт техники
@@ -55,13 +56,13 @@
             </nav>
             <footer class="inner-menu__footer">
                 <div class="footer__icons--inner">
-                    <button class="footer__call footer__button button-g">
+                    <button class="footer__call call--button footer__button button-g">
                         <img src="resource/header/call.svg" alt="">
                     </button>
-                    <button class="footer__chat footer__button button-g">
+                    <button class="footer__chat chat--button footer__button button-g">
                         <img src="resource/header/chat.svg" alt="">
                     </button>
-                    <button class="footer__profile footer__button button-g">
+                    <button class="footer__profile profile--button footer__button button-g">
                         <img src="resource/header/profile.svg" alt="">
                     </button>
                 </div>
@@ -86,7 +87,49 @@
                     </div>
                 </div>
             </footer>
+            <div class="inner-menu--lock"></div>
         </div>
+
+        <div class="inner-phone--close container__inner-phone">
+            <button class="call--button inner-phone__burger--close inner-button button-g">
+                <img src="resource/header/close-burger.svg" alt="">
+            </button>
+            <div class="inner-phone__header"><h1>Обратная связь</h1></div> 
+            <input class="form-inner inner-phone__number" type="text" placeholder="Телефон">
+            <div class="inner-phone__description">
+                Нажимая “отправить”, вы даете согласие на <a href="#">обработку персональных данных</a>  и соглашаетесь с нашей <a href="">политикой конфиденциальности</a>
+            </div>
+            <button class="button-g table__button inner-phone__button">
+                <span>заказать</span> 
+            </button>
+            <div class="inner-phone--lock"></div>
+        </div>
+
+
+        <div class="inner-feedback--close container__feedback">
+            <div class="main-lock"></div>
+            <button class="chat--button inner-feedback__burger--close inner-button button-g">
+                <img src="resource/header/close-burger.svg" alt="">
+            </button>
+            <div class="inner-feedback__header">
+                <h1>Заказать звонок</h1>
+            </div> 
+            <form action="#">
+                <input class="form-inner inner-feedback__name" type="text" placeholder="Имя">
+                <input class="form-inner inner-feedback__number" type="text" placeholder="Телефон">
+                <input class="form-inner inner-feedback__email" type="text" placeholder="email">
+                <textarea class="form-inner inner-feedback__message" rows="5">Сообщение</textarea>
+            </form>
+            <div class="inner-feedback__description">
+                Нажимая “отправить”, вы даете согласие на <a href="#">обработку персональных данных</a>  и соглашаетесь с нашей <a href="">политикой конфиденциальности</a>
+            </div>
+            <button class="button-g table__button inner-feedback__button">
+                <span>заказать</span> 
+            </button>
+            
+            <div class="inner-feedback--lock"></div>
+        </div>
+
         
 
         <div class="container__main">
@@ -100,13 +143,13 @@
                     </a>
                 </div>
                 <div class="header__right">
-                    <button class="header__call header-button button-g">
+                    <button class="header__call call--button header-button button-g">
                         <img src="resource/header/call.svg" alt="">
                     </button>
-                    <button class="header__chat header-button button-g">
+                    <button class="header__chat chat--button header-button button-g">
                         <img src="resource/header/chat.svg" alt="">
                     </button>
-                    <button class="header__profile header-button button-g">
+                    <button class="header__profile profile--button header-button button-g">
                         <img src="resource/header/profile.svg" alt="">
                     </button>
                     <button class="header__check-status header-button button-g">

@@ -39,7 +39,13 @@ html, body{
 .footer{
     margin-bottom: auto;
 }
-
+.main-lock{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #ffffff94;
+    display: none;
+}
 
 
 /*------------header------------*/
@@ -184,13 +190,7 @@ html, body{
 /*-----------media-768--------------*/
 
 @media (min-width: 768px) {
-    .header__call{
-        display: flex;
-    }
-    .header__chat{
-        display: flex;
-    }
-    .header__profile{
+    .header__call,.header__chat,.header__profile{
         display: flex;
     }
     .header__burger::after{
@@ -264,3 +264,5 @@ html, body{
 @import 'tech';
 @import 'price';
 @import 'footer';
+@import 'inner-feedback';
+@import 'inner-phone';

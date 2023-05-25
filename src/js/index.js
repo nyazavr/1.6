@@ -15,20 +15,16 @@ $(window).on( "resize", function() {
   }
 
   if(window.matchMedia('(min-width: 1024px)').matches){
-    console.log('min!')
     $('.container__inner-menu').addClass('inner-menu--open').removeClass('inner-menu--close');
   }else{
-    console.log('max!')
     $('.container__inner-menu').addClass('inner-menu--close').removeClass('inner-menu--open');
   }
 });
 
 
 if(window.matchMedia('(min-width: 1024px)').matches){
-  console.log('min!')
   $('.container__inner-menu').addClass('inner-menu--open').removeClass('inner-menu--close');
 }else{
-  console.log('max!')
   $('.container__inner-menu').addClass('inner-menu--close').removeClass('inner-menu--open');
 }
 
@@ -81,6 +77,11 @@ $('.read-more__button').on('click',function(event) {
 $('.header__burger').on('click',function() {
   $('.container__inner-menu').toggleClass('inner-menu--close inner-menu--open');
 })
-
+$('.call--button').on('click',function(){
+  $('.container__inner-phone').toggleClass('inner-phone--close inner-phone--open');
+})
+$('.chat--button').on('click',function(){
+  $('.container__feedback').toggleClass('inner-feedback--close inner-feedback--open');
+})
 
 console.log('hello!!')
