@@ -1,13 +1,5 @@
-@import '../../node_modules/swiper/swiper.scss';
-@import '../../node_modules/swiper/swiper-bundle.min.css';
-
-.read-more__button span {
-  display: flex;
-  
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.2px;
-  font-weight: 600;
+.repair-brends__menu{
+  margin-left: 24px;
   
 }
 .content__repair-brends{
@@ -42,9 +34,19 @@
   
 }
 .read-more__button {
+  margin-top: 24px;
+  margin-bottom: 24px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+.read-more__button span {
+  display: flex;
+  margin-left: 12px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  font-weight: 600;
   
 }
 .brends__container {
@@ -64,7 +66,11 @@
   display: none;
   overflow: hidden;
 }
-
+.brends__read-more .read-more--close{
+  height: 190px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
 .brends__link {
   padding: 0px;
 }
@@ -88,7 +94,7 @@
 }
 .read-more__content a .brends__container{
   margin-left: 24px;
-  margin-top: 24px;
+  
 }
 
 @media (min-width: 768px) {

@@ -1,7 +1,11 @@
+.repair-tech__menu{
+    margin-left: 24px;
+  }
 .tech__item{
+    font-size: 16px;
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items:flex-start;
+    justify-content: space-between;
     flex-shrink: 0;
     padding: 16px;
     font-family: 'TT Lakes';
@@ -29,7 +33,7 @@
 
 .tech__butt-icon{
     position: relative;
-    left: 40px;
+    right: 18px;
     top: 80px;
 }
 
