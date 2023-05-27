@@ -83,5 +83,13 @@ $('.call--button').on('click',function(){
 $('.chat--button').on('click',function(){
   $('.container__feedback').toggleClass('inner-feedback--close inner-feedback--open');
 })
-
+$('.inner-menu__overlay').on('click',function() {
+  $('.container__inner-menu').toggleClass('inner-menu--close inner-menu--open');
+})
+$('.inner-phone__overlay').on('click',function(){
+  $('.container__inner-phone').toggleClass('inner-phone--close inner-phone--open');
+})
+$('.inner-feedback__overlay').on('click',function(){
+  $('.container__feedback').toggleClass('inner-feedback--close inner-feedback--open');
+})
 console.log('hello!!')
