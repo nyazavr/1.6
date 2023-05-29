@@ -66,18 +66,20 @@ table.price__table tbody tr:last-child td:last-child {
     border-bottom-left-radius: 3px;
     transform: rotate(-45deg);
 }
-.price__slide h3{
+.price__item h3{
     margin: 3px;
 }
-.price__slide{
+.price__item{
     flex-direction: column;
     width: 240px;
     height: 160px;
     padding: 16px;
     background: #ffffff;
+    margin: 16px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 6px;
+    
 }
 .table__button--slide{
     width: 100px;
@@ -86,7 +88,7 @@ table.price__table tbody tr:last-child td:last-child {
     left: 140px;
 }
 .price--swiper{
-    height: 260px;
+    height: 250px;
 }
 .price__table{
     display: none;
