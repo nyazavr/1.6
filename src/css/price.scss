@@ -1,5 +1,7 @@
+.content__price{
 
-.price__service{
+}
+.table__service{
     padding-left: 3%;
     padding-top: 23px;
     padding-bottom: 23px;
@@ -13,9 +15,13 @@
     margin-right: 3%;
 }
 
-table.price__table thead tr{
+.table__head th{
     text-align: left;
     color:  #7E7E82;
+    font-weight: 500;
+}
+table.price__table thead tr{
+
 }
 table.price__table tbody tr:first-child td:first-child {
     border-top-left-radius: 10px;
@@ -67,7 +73,13 @@ table.price__table tbody tr:last-child td:last-child {
     transform: rotate(-45deg);
 }
 .price__item h3{
-    margin: 3px;
+    margin: 0px;
+    font-weight: 400;
+    color:  #7E7E82;
+}
+.price__item span{
+    
+    margin: 0px;
 }
 .price__item{
     flex-direction: column;
@@ -96,8 +108,10 @@ table.price__table tbody tr:last-child td:last-child {
 .price p{
     margin-left: 3%;
     margin-right: 3%;
+    
 }
 .price__button{
+    font-family: 'TT Lakes';
     display: flex;
     flex-wrap: nowrap;
     margin-left: 3%;
@@ -117,7 +131,7 @@ table.price__table tbody tr:last-child td:last-child {
     padding: 3px;
     border-top-right-radius: 3px;
     border-bottom-left-radius: 3px;
-    transform: rotate(-45deg);
+    transform: rotate(-45deg) translateX(-3px) translateY(-1px);
 }
 @media (min-width: 768px) {
 

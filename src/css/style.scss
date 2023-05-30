@@ -42,6 +42,7 @@ html, body{
     margin-top: 3%;
     border-top: 1px #D9FFF5 solid;
     margin-bottom: auto;
+    color: #7E7E82;
 }
 .main-lock{
     position: fixed;
@@ -51,7 +52,7 @@ html, body{
     display: none;
 }
 h2{
-    font-weight: 300;
+    font-weight: 400;
 }
 .content{
     margin-bottom: 3%;
@@ -189,6 +190,9 @@ h2{
 .content__header{
     display: flex;
     align-items: center;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    font-weight: 900;
     border-top: 1px #41F6D7 solid;
     background: rgb(248,248,248);
     background: linear-gradient(90deg, rgba(248,248,248,1) 0%, rgba(255,255,255,1) 100%);
