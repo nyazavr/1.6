@@ -67,7 +67,7 @@ $('.read-more__button').on('click',function(event) {
     $($(event.delegateTarget).children('span')).html('Свернуть');
     fl=false;
   }else{
-    $($(event.delegateTarget).children('span')).html('Читать далее');
+    $($(event.delegateTarget).children('span')).html('Смотреть всё');
     fl=true;
   }
 })

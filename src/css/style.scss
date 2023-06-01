@@ -72,8 +72,12 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .2s ease-in-out;
 }
 .header-button:active img{
+    transform: scale(1.2);
+}
+.header-button:hover{
     transform: scale(1.1);
 }
 .header-button span{

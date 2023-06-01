@@ -20,9 +20,7 @@
     color:  #7E7E82;
     font-weight: 500;
 }
-table.price__table thead tr{
 
-}
 table.price__table tbody tr:first-child td:first-child {
     border-top-left-radius: 10px;
 }
@@ -58,6 +56,10 @@ table.price__table tbody tr:last-child td:last-child {
     padding: 12px;
     padding-top: 6px;
     padding-bottom: 6px;
+    transition: all .2s ease-in-out;
+}
+.table__button:hover{
+    transform: scale(1.2);
 }
 .table__button::after{
     content: '';
