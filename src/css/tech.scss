@@ -1,6 +1,14 @@
-.repair-tech__menu{
-    margin-left: 24px;
-  }
+
+.tech{
+    //margin-left: 24px;
+    display: flex;
+}
+.tech::after{
+    content: '';
+    z-index: 100;
+    border:1px solid #F8F8F8;
+    box-shadow:0px 0px 10px 10px #F8F8F8;
+}
 .tech__item{
     font-size: 16px;
     display: flex;
@@ -41,6 +49,12 @@
 
 
 @media (min-width: 768px) {
+    .repair-tech__menu{
+        margin-left: 24px;
+    }
+    .tech::after{
+        display: none;
+    }
     .tech__item{
         margin-left: 24px;
         margin-top: 24px;
@@ -53,5 +67,9 @@
         flex-direction: column;
         flex-wrap: wrap;
         overflow: hidden;
+    }
+    .tech__read-more .read-more--open{
+        flex-flow:row wrap;
+        justify-content: flex-start;
     }
 }

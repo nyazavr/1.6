@@ -1,6 +1,11 @@
-.repair-brends__menu{
-  margin-left: 24px;
-  
+.brends{
+  display: flex;
+}
+.brends::after{
+  content: '';
+  z-index: 100;
+  border:1px solid #F8F8F8;
+  box-shadow:0px 0px 10px 10px #F8F8F8;
 }
 .content__repair-brends{
   margin-bottom: 50px;
@@ -51,7 +56,7 @@
 }
 .brends__container {
   background: #ffffff;
-  width: 220px;
+  width: 224px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -63,6 +68,7 @@
   padding: 0px;
 }
 .brends__read-more {
+
   display: none;
   overflow: hidden;
 }
@@ -92,13 +98,11 @@
 .read-more--close{
   flex-wrap: nowrap;
 }
-.read-more__content a .brends__container{
-  margin-left: 24px;
-  
-}
 
 @media (min-width: 768px) {
-
+  .brends__container{
+    margin: 12px;
+  }
   .brends--swiper{
     display: none;
   }

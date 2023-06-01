@@ -71,10 +71,14 @@
 .inner-feedback__description {
     margin: 8px;
 }
+.inner-feedback__description a{
+    text-decoration: none;
+    color: #FF3E79;
+}
 .inner-feedback__button {
     position: relative;
-    width: 95px;
-    left: 200px;
+    width: 116px;
+    left: 300px;
 }
 .container__feedback .main-lock{
     position: fixed;
@@ -84,10 +88,19 @@
     background: #ffffff8e;
 }
 @media (min-width: 768px) {
+    .inner-feedback__overlay{
+        right:440px;
+    }
     .inner-feedback__burger--close {
         position: absolute;
         z-index: 120;
         top: 0px;
-        right: 340px;
+        right: 450px;
+    }
+    .container__feedback {
+        width: 440px;
+    }
+    .inner-feedback__button {
+        left: 280px;
     }
 }

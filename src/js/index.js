@@ -32,43 +32,48 @@ if(window.matchMedia('(min-width: 1024px)').matches){
 //Swiper
 const brendsSwiper = new Swiper('.brends--swiper', {
   modules:[Pagination],
-  loop: true,
-  
+  slidesPerView:1.3,
+  centeredSlides: true,
   pagination: {
-    el: '.swiper-pagination'
+    el: '.swiper-pagination',
+    clickable: true,
   }
 })
 const techSwiper = new Swiper('.tech--swiper', {
   modules:[Pagination],
-  loop: true,
+  slidesPerView:1.3,
   centeredSlides: true,
   pagination: {
-    el: '.swiper-pagination'
+    el: '.swiper-pagination',
+    clickable: true,
   }
 })
 const priceSwiper = new Swiper('.price--swiper', {
   modules:[Pagination],
-  loop: true,
+  slidesPerView:1.1,
   centeredSlides: true,
   pagination: {
-    el: '.swiper-pagination'
+    el: '.swiper-pagination',
+    clickable: true,
   }
 })
 
 
 
 //ReadMore
-let fl=true
 $('.read-more__button').on('click',function(event) {
   event.preventDefault();
   $($(event.delegateTarget).siblings('.read-more__content')).toggleClass('read-more--close read-more--open');
   $($(event.delegateTarget).children('.expand')).toggleClass('expand--read-more expand--less');
-  if(fl){
+  if($($(event.delegateTarget).children('.expand')).hasClass('expand--less')){
     $($(event.delegateTarget).children('span')).html('Свернуть');
-    fl=false;
   }else{
-    $($(event.delegateTarget).children('span')).html('Смотреть всё');
-    fl=true;
+    console.log($($($(event.delegateTarget).siblings('.read-more__content')).siblings('.read-more')).hasClass('content-body__read-more'))
+    if($($(event.delegateTarget).parent('.read-more')).hasClass('content-body__read-more')){
+      $($(event.delegateTarget).children('span')).html('Читать далее');
+    }else{
+      $($(event.delegateTarget).children('span')).html('Показать всё');
+    }
   }
 })
 

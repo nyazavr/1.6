@@ -10,9 +10,13 @@
     box-shadow: 50px 20px 0px 0px  #0E185033;
     height: 100%;
 }
+.inner-phone__number{
+    width: 89%;
+}
 .inner-phone__box{
     overflow-y: scroll;
     padding: 3%;
+    margin: 3%;
 }
 .inner-phone__box::-webkit-scrollbar {
     width: 0;
@@ -53,19 +57,33 @@
 }
 .inner-phone__description {
     margin: 8px;
+    
+}
+.inner-phone__description a{
+    text-decoration: none;
+    color: #FF3E79;
 }
 .inner-phone__button {
     position: relative;
-    width: 95px;
+    width: 116px;
     left: 200px;
 }
 
 
 @media (min-width: 768px) {
+    .inner-phone__overlay{
+        right:440px;
+    }
     .inner-phone__burger--close {
         position: absolute;
         z-index: 120;
         top: 0px;
-        right: 340px;
+        right: 450px;
+    }
+    .container__inner-phone {
+        width: 440px;
+    }
+    .inner-phone__button {
+        left: 270px;
     }
 }
